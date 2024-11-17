@@ -1,0 +1,89 @@
+/* General Styles */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #0077ff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #ff7700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+main {
+    padding: 20px;
+}
+
+textarea, input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
