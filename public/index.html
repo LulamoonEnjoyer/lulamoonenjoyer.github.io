@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Twinder95</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Twinder95</h1>
+    </header>
+    <main>
+        <section id="create-post">
+            <h2>Create a Post</h2>
+            <form id="postForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <textarea name="content" placeholder="What's on your mind?" required></textarea>
+                <input type="file" name="postImage">
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section id="timeline">
+            <h2>Timeline</h2>
+            <div id="posts"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Twinder95</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
